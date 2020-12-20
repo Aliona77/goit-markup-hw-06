@@ -693,6 +693,20 @@ img {
   color: #757575;
   margin-bottom: 30px;
 }
+.backdrop-form-policy-text::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  outline: 1px solid #000;
+  margin-right: 10px;
+  border: none;
+  background-image: url(../images/modal/vector.svg);
+  background-repeat: no-repeat;
+  border-radius: 2px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .backdrop-text-link {
   color: #2196f3;
   text-decoration-line: underline;
