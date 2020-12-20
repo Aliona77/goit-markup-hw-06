@@ -501,9 +501,7 @@ img {
   margin-bottom: 20px;
   display: inline-block;
 }
-.footer-container-slogan {
-  margin-right: 94px;
-}
+
 .footer-social-list {
   display: flex;
 }
@@ -541,6 +539,9 @@ img {
   padding: 15px 16px;
   margin-right: 12px;
 }
+.footer-group {
+  margin-left: 100px;
+}
 .button-subscribe {
   min-width: 200px;
   height: 50px;
@@ -549,6 +550,8 @@ img {
   border-radius: 4px;
   cursor: pointer;
   border: none;
+  align-items: center;
+  text-align: center;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
@@ -561,6 +564,7 @@ img {
 .subscribe-text {
   margin-right: 10px;
 }
+
 /*============= End Footer==========*/
 
 /*============= Backdrop ==========*/
@@ -592,6 +596,7 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  padding: 40px;
 }
 
 .close-btn {
@@ -612,6 +617,122 @@ img {
   visibility: hidden;
   pointer-events: none;
 }
+.backdrop-slogan {
+  font-family: var(--main-font);
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 12px;
+}
+
+.backdrop-form {
+  display: flex;
+  flex-direction: column;
+}
+.backdrop-form-field {
+  font-family: var(--main-font);
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+
+.backdrop-form-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-left: 42px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop-form-input:focus {
+  outline: none;
+  border-color: #2196f3;
+}
+.backdrop-form-input:focus + backdrop-form-icon {
+  background-color: #2196f3;
+}
+.backdrop-form-input-wrapper {
+  position: relative;
+  display: block;
+  margin-top: 4px;
+  margin-bottom: 10px;
+}
+
+.backdrop-form-icon {
+  position: absolute;
+  fill: #000000;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop-form-message {
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 12px 16px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  resize: none;
+}
+.backdrop-form-message:focus {
+  outline: none;
+  border-color: #2196f3;
+}
+.backdrop-form-policy-text {
+  font-family: var(--accent-color);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+  margin-bottom: 30px;
+}
+.backdrop-text-link {
+  color: #2196f3;
+  text-decoration-line: underline;
+}
+.backdrop-form-btn {
+  font-family: var(--main-font);
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  font-weight: bold;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  background: #188ce8;
+  cursor: pointer;
+  width: 200px;
+  min-height: 50px;
+  margin: auto;
+}
+.backdrop-form-btn:hover,
+.backdrop-form-btn:focus {
+  background-color: #188ce8;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /*============= END  Backdrop ==========*/
 
 /*=============Portfolio==========*/

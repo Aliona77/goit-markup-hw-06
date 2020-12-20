@@ -493,6 +493,60 @@
             <use href="./images/sprite.svg#icon-clbtn"></use>
           </svg>
         </button>
+        <p class="backdrop-slogan">Оставьте свои данные, мы вам перезвоним</p>
+        <form action="" class="backdrop-form">
+          <label class="backdrop-form-field">
+            Имя
+            <span class="backdrop-form-input-wrapper">
+              <input type="text" class="backdrop-form-input" />
+              <svg class="backdrop-form-icon" width="18" height="18">
+                <use href="./images/sprite.svg#person"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="backdrop-form-field">
+            Телефон
+            <span class="backdrop-form-input-wrapper">
+              <input type="text" class="backdrop-form-input" />
+              <svg class="backdrop-form-icon" width="18" height="18">
+                <use href="./images/sprite.svg#phone_black"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="backdrop-form-field">
+            Почта
+            <span class="backdrop-form-input-wrapper">
+              <input type="text" class="backdrop-form-input" />
+              <svg class="backdrop-form-icon" width="18" height="18">
+                <use href="./images/sprite.svg#email_black"></use>
+              </svg>
+            </span>
+          </label>
+          <label class="backdrop-form-field">
+            Комментарий
+            <textarea
+              placeholder="Введите текст"
+              class="backdrop-form-message"
+              name="user-message"
+            >
+            </textarea>
+          </label>
+          <input
+            type="checkbox"
+            id="user-polisy"
+            name="user-polisy"
+            value="accept-policy"
+            class="backdrop-form-policy visually-hidden"
+          />
+          <svg class="" width="16" height="15">
+            <use href="./images/sprite.svg#icon-Rectangle"></use>
+          </svg>
+          <label for="user-policy" class="backdrop-form-policy-text"
+            >Соглашаюсь с рассылкой и принимаю
+            <a class="backdrop-text-link" href="#">Условия договора</a>
+          </label>
+          <button type="submit" class="backdrop-form-btn">Отправить</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
