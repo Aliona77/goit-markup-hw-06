@@ -677,6 +677,8 @@ img {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+  margin-top: 4px;
+  margin-bottom: 20px;
   padding: 12px 16px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   resize: none;
@@ -693,19 +695,24 @@ img {
   color: #757575;
   margin-bottom: 30px;
 }
+
 .backdrop-form-policy-text::before {
   content: "";
   display: inline-block;
   width: 16px;
-  height: 16px;
-  outline: 1px solid #000;
+  height: 15px;
+  border: 2px solid #212121;
   margin-right: 10px;
-  border: none;
-  background-image: url(../images/modal/vector.svg);
-  background-repeat: no-repeat;
   border-radius: 2px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop-form-checkbox:checked + .backdrop-form-policy-text::before {
+  background-image: url(../images/modal/vector.svg);
+  background-color: #2196f3;
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
 }
 .backdrop-text-link {
   color: #2196f3;
@@ -732,19 +739,6 @@ img {
 .backdrop-form-btn:hover,
 .backdrop-form-btn:focus {
   background-color: #188ce8;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 /*============= END  Backdrop ==========*/
