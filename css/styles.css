@@ -856,6 +856,7 @@ img {
   border-bottom: 1px solid #eeeeee;
   box-sizing: border-box;
 }
+/*=============End Portfolio==========*/
 /*============= Portfolio Overlay==========*/
 .overlay {
   position: absolute;
@@ -883,5 +884,3 @@ img {
   transform: translateY(0%);
 }
 /*============= End Portfolio Overlay==========*/
-
-/*=============End Portfolio==========*/ ;
