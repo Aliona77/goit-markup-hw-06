@@ -671,7 +671,7 @@ img {
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.backdrop-form-message {
+.backdrop-form-comment {
   width: 100%;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -683,7 +683,7 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   resize: none;
 }
-.backdrop-form-message:focus {
+.backdrop-form-comment:focus {
   outline: none;
   border-color: #2196f3;
 }
@@ -713,7 +713,7 @@ img {
   background-repeat: no-repeat;
   background-size: contain;
   border: none;
-  background-position: ;
+  background-position: 50% 50%;
 }
 .backdrop-text-link {
   color: #2196f3;
