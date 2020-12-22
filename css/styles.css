@@ -538,6 +538,7 @@ img {
   background-color: #2f303a;
   padding: 15px 16px;
   margin-right: 12px;
+  color: rgba(255, 255, 255, 0.6);
 }
 .footer-group {
   margin-left: 94px;
